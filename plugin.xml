@@ -70,11 +70,16 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
         </config-file>
 
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        </config-file>
+
         <source-file src="android/src/CordovaLocationListener.java" target-dir="src/fr/louisbl/cordova/locationservices" />
         <source-file src="android/src/CordovaLocationServices.java" target-dir="src/fr/louisbl/cordova/locationservices" />
         <source-file src="android/src/ErrorDialogFragment.java" target-dir="src/fr/louisbl/cordova/locationservices" />
         <source-file src="android/src/GApiUtils.java" target-dir="src/fr/louisbl/cordova/locationservices" />
         <source-file src="android/src/LocationUtils.java" target-dir="src/fr/louisbl/cordova/locationservices" />
 
+        <resource-file src="android/res/integers.xml" target="res/values/fr.louisbl.cordova.locationservices.integers.xml" />
     </platform>
 </plugin>
