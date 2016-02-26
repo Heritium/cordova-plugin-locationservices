@@ -30,6 +30,8 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <repo>https://github.com/louisbl/cordova-plugin-locationservices</repo>
     <issue>https://github.com/louisbl/cordova-plugin-locationservices/issues</issue>
 
+    <dependency id="cordova-android-support-v4" url="https://github.com/Heritium/cordova-plugin-android-support-v4" commit="HEAD" />
+
     <!-- android -->
     <platform name="android">
         <framework src="com.google.android.gms:play-services-location:7.8.0" />
